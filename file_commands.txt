@@ -1,0 +1,5 @@
+# get file type
+file _path_to_the_file_
+
+# show all mounted systems
+df -Hp
