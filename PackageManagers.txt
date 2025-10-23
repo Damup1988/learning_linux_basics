@@ -1,0 +1,8 @@
+# list repos in RPM based systems
+yum repolist
+
+# query rpm DB to list all installed software
+rpm -qa
+
+# get package which provides a certain tool, e.g. telnet
+yum provide _tool_name_
