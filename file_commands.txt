@@ -3,3 +3,8 @@ file _path_to_the_file_
 
 # show all mounted systems
 df -Hp
+
+# show file size
+du -sh _file_
+du -sk _file_
+ls -lh _file_

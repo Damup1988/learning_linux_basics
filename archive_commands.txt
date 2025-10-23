@@ -1,0 +1,11 @@
+# create an archive with several files
+tar -cf archive.tar file1 file2 file3
+
+# show content of an archive
+tar -tf archive.tar
+
+# extract files from an archive
+tar -xf archive.tar
+
+# compress files to archive
+tar -zcf archive.tar file1 file2 file3
