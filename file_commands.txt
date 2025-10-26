@@ -8,3 +8,18 @@ df -Hp
 du -sh _file_
 du -sk _file_
 ls -lh _file_
+
+# search for a file
+locate _file_name_
+
+# update db for locate util
+sudo updatedb
+
+# search for a file using find command, exact matches only
+find _folder_where_to_search_ -type f -name _file_name_
+
+# find files that contains a particular string
+sudo grep -ir "your_string" _path_to_folder_
+
+# redicrect error messages to a file
+_command_line_ 2> _path_to_file_

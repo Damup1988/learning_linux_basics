@@ -9,3 +9,6 @@ tar -xf archive.tar
 
 # compress files to archive
 tar -zcf archive.tar file1 file2 file3
+
+# archive a folder and then compress it
+tar -czvf _path_and_name_for_new_archive_ _path_to_the_folder_
