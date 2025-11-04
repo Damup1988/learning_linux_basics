@@ -1,0 +1,26 @@
+# get info regarding accounts
+cat /etc/passwd
+
+# get info about groups
+cat /etc/group
+
+# get info about user account
+id 
+
+# show currently logged users
+who
+
+# show history of logins
+last
+
+# switch to root
+su -
+
+# get config of sudo
+cat /etc/sudoers
+
+# get stored passwords
+cat /etc/shadow
+
+# info in /etc/passwd file
+USERNAME:PASSWORD:UID:GID:GECOS:HOMEDIR:SHELL

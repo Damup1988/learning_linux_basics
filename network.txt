@@ -1,0 +1,17 @@
+# get more info about DNS record
+dig google.com
+
+# get info which DNS server is used and search domain
+cat /etc/resolv.conf
+
+# check the prder of DNS resolve
+cat /etc/nsswitch.conf
+
+# add IP address to a NIC
+ip addr add 192.168.0.10/24 dev eth0
+
+# add a route
+ip route add dest_subnet via gateway_address
+
+# to up down NIC
+sudo ip link set dev eth0 up
