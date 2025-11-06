@@ -1,0 +1,5 @@
+# set file permissions
+chmod _permissions_ file
+
+# change owner
+chown owner:group file

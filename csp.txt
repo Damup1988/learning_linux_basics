@@ -1,0 +1,2 @@
+# copy file from one server to another over ssh
+scp /path_to_source_file remote_server:/target_directory

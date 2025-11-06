@@ -1,3 +1,10 @@
+# create a new user
+sudo adduser user_name
+sudo useradd -u 1010 -g john -s /bin/sh -m john
+
+# create a group with id
+sudo groupadd -g id_number group_name
+
 # get info regarding accounts
 cat /etc/passwd
 
