@@ -1,0 +1,22 @@
+# iptables command keys
+-A Add Rule
+-I Add Rule to the top
+-D delete a rule
+-p Protocol
+-s Source
+-d Destination
+--dport Desctination port
+-j Action to take
+
+# install iptebles
+sudo apt install iptables
+
+# list default rules in the system
+sudo iptables -L
+
+# create a rules
+iptables -A INPUT -p tcp -s 172.16.238.187 --dport 22 -j ACCEPT
+iptables -A INPUT -p tcp --dport 22 -j DROP
+
+# delete a rule which is 5th from the top
+iptables -D OUTTPUT 5
