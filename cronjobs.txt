@@ -1,0 +1,8 @@
+# open crontab file for editing
+crontab -e
+
+# list all the jobs
+crontab -l
+
+# check result of cronjobs
+tail /var/log/syslog

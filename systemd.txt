@@ -1,0 +1,44 @@
+# path where .service files should be created
+/etc/systemd/system/filename.service
+
+# to start a service from a service file
+systemctl start filename.service
+
+# get status of the service
+systemctl status filename.service
+
+# stop a service
+systemctl stop filename.service
+
+# after new service was created
+systemctl daemon-
+
+# edit a service
+systemctl edit filename.service --full
+
+# list all the units (services)
+systemctl list-units  --all
+
+# show services logs
+journalctl
+
+# show services logs with current boot
+journalctl -b
+
+# show logs for a specific service
+journalctl -u filename.service
+
+# example
+[Unit]
+Description=Some custom service created by a user # field for description
+Documentation=https://mysite.contoso.com/doc.html # link to docs
+After=postgressql.service                         # to start our service only after postgressql.service is started
+
+[Service]
+ExecStart= /bin/bash /usr/bin/project-mercury.sh
+User=project_mercury                              # run the service as project_mercury user
+Restart=on-failure                                # restart the service if it failed
+RestartSec=10                                     # try to restart each 10 seconds
+
+[Install]
+WantedBy graphical.target                         # load when boot in graphical mode
