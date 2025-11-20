@@ -15,3 +15,6 @@ ip route add dest_subnet via gateway_address
 
 # to up down NIC
 sudo ip link set dev eth0 up
+
+# show ports with services
+sudo netstat -natlup

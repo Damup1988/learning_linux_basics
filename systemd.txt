@@ -11,7 +11,7 @@ systemctl status filename.service
 systemctl stop filename.service
 
 # after new service was created
-systemctl daemon-
+systemctl daemon-reload
 
 # edit a service
 systemctl edit filename.service --full
@@ -39,6 +39,7 @@ ExecStart= /bin/bash /usr/bin/project-mercury.sh
 User=project_mercury                              # run the service as project_mercury user
 Restart=on-failure                                # restart the service if it failed
 RestartSec=10                                     # try to restart each 10 seconds
+WorkingDirectory=path_to_work_dir
 
 [Install]
 WantedBy graphical.target                         # load when boot in graphical mode
